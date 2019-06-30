@@ -15,7 +15,7 @@
     "rules": {
         "no-console": 0
     },
-    "setting": {
+    "settings": {
         "react": {
             "version": "detect"
         }
