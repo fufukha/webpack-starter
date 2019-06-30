@@ -9,9 +9,9 @@ function helloWorld() {
 }
 
 function component() {
-  const element = document.createElement('div');
-  element.id = 'app'
-  return element;
+    const element = document.createElement('div');
+    element.id = 'app'
+    return element;
 }
 
 
@@ -19,5 +19,5 @@ document.body.appendChild(helloWorld());
 document.body.appendChild(component());
 
 render(
-  <FormContainer />, document.getElementById('app')
+    <FormContainer />, document.getElementById('app')
 );
