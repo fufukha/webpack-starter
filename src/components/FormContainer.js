@@ -24,7 +24,7 @@ const FormContainer = () => {
           handleChange={(e) => setSeoTitle(e.target.value)}
         />
         <Counter
-            count={` ` + count + ` `}
+            count={count}
             increment = {incrementCallback}
             decrement = {decrementCallback}
         />

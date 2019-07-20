@@ -6,7 +6,7 @@ const Counter = ({count, increment, decrement}) => {
         <div>
             <h3>Counter</h3>
             <button onClick={increment}>+</button>
-            <span>{count}</span>
+            <span>{` ` + count + ` `}</span>
             <button onClick={decrement}>-</button>
         </div>
     )
