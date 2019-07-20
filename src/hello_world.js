@@ -1,6 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
-import FormContainer from './components/smart/FormContainer';
+import FormContainer from './components/FormContainer';
+import store from './store';
+import { Provider } from 'react-redux';
 
 function helloWorld() {
     const h1 = document.createElement('h1');
@@ -19,5 +21,7 @@ document.body.appendChild(helloWorld());
 document.body.appendChild(component());
 
 render(
-    <FormContainer />, document.getElementById('app')
+    <Provider store={store}>
+        <FormContainer />
+    </Provider>, document.getElementById('app')
 );

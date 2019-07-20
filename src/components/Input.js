@@ -12,6 +12,7 @@ const Input = ({ label, text, type, id, value, handleChange }) => (
       onChange={handleChange}
       required
     />
+    <span>{` ` + value}</span>
   </div>
 );
 
